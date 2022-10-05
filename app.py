@@ -7,7 +7,7 @@ import numpy as np
 import time
 
 #loading the image classifier model
-img_clf = keras.models.load_model('C:/PC_Data/DBDA/01_Github/CNN - Image Clasification - Asian & African Elephants/img_cls_cnn')
+img_clf = keras.models.load_model('...file_path/img_cls_cnn')
 
 
 #functions to predict image
@@ -24,7 +24,7 @@ st.title("Asian-African Image Classification App")
 # For newline
 st.write('\n')
 
-image = Image.open("C:/PC_Data/DBDA/01_Github/CNN - Image Clasification - Asian & African Elephants/Dataset/cover.jpg")
+image = Image.open("...file_path/cover.jpg")
 show = st.image(image, use_column_width=True)
 
 st.sidebar.title("Upload Image")
