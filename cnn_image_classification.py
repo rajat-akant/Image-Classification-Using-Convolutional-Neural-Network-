@@ -38,7 +38,7 @@ validation_generator = test_datagen.flow_from_directory(directory=validation_dir
                                                         shuffle=True, seed=2022)
 
 model = tf.keras.models.Sequential([
-    # Note the input shape is the desired size of the image 150x150 with 3 bytes color
+    # Note the input shape is the desired size of the image 180x180 with 3 bytes color
     tf.keras.layers.Conv2D(16, (3,3), activation='relu', input_shape=(180, 180, 3)),
     tf.keras.layers.MaxPooling2D(2,2),
     # Flatten the results to feed into a DNN
